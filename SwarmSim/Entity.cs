@@ -95,8 +95,8 @@ namespace SwarmSim
         public Entity(Vector2f position = default, Sprite? sprite = null, Vector2f? scale = null)
         {
             _count++; // Increment instance count
-            Position = position;
             _sprite = sprite ?? new Sprite(); // Use provided sprite or create new
+            Position = position;
             Scale = scale ?? new Vector2f(1.0f, 1.0f); // Use provided scale or default
         }
         
